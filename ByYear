@@ -1,0 +1,10 @@
+def get_zodiac(year):
+    animals = [
+        "Обезьяна", "Петух", "Собака", "Свинья", "Крыса", "Бык",
+        "Тигр", "Кролик", "Дракон", "Змея", "Лошадь", "Коза"
+    ]
+    return animals[(year) % 12]
+
+year = int(input("Введите год рождения: "))
+zodiac_animal = get_zodiac(year)
+print(f"Ваше животное по китайскому гороскопу: {zodiac_animal}")
